@@ -1,0 +1,2 @@
+Task,Mean auc,Standard deviation auc,Fold 0 auc,Mean f1,Standard deviation f1,Fold 0 f1,Mean accuracy,Standard deviation accuracy,Fold 0 accuracy,Mean mcc,Standard deviation mcc,Fold 0 mcc
+toxicity,0.921687843594131,0.0,0.921687843594131,0.8527472527472527,0.0,0.8527472527472527,0.8571428571428571,0.0,0.8571428571428571,0.7140387018513198,0.0,0.7140387018513198

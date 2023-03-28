@@ -11,7 +11,6 @@
 *.log
 args.json
 hyperopt_it*.json
-test_scores.csv
 *.XLECH-STATION
 
 # Byte-compiled / optimized / DLL files
