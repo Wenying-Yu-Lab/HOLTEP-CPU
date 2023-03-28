@@ -51,7 +51,7 @@ ARGS = [
         ['data_path'],
         {
             'type': str,
-            'help': 'Specify the file containing a series of SMILES of the structures for prediction.',
+            'help': 'Specify the file containing a series of SMILES data of the structures for prediction.',
         }
     ],
     [
