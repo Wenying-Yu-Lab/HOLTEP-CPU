@@ -1,7 +1,9 @@
 # HOLTEP-CPU  
 Human Organ Level Toxicity Endpoints Predictor from China Pharmaceutical University (`HOLTEP-CPU`) is a collection of five models that could predict the specific toxicity endpoints of given molecular structures at the human organ level.   
 
-These five models are `Chemprop` (which is a deep learning model), `RandomForest`, `SVM`, `XGboosting` and `LogisticRegression` (which are machine learning models). The supported toxicity endpoints are `carcinogenicity`, `cardiotoxicity`, `developmental_toxicity`, `hepatotoxicity`, `nephrotoxicity`, `neurotoxicity`, `reproductive_toxicity` and `skin_sensitization`.
+These five models are `Chemprop` (which is a deep learning model), `RandomForest`, `SVM`, `XGboosting` and `LogisticRegression` (which are machine learning models). The supported toxicity endpoints are `carcinogenicity`, `cardiotoxicity`, `developmental_toxicity`, `hepatotoxicity`, `nephrotoxicity`, `neurotoxicity`, `reproductive_toxicity` and `skin_sensitization`.  
+
+In addition, a transfer learning model based on `Chemprop` is also deployed with the help of [pkuwangsw/COVIDVS](https://github.com/pkuwangsw/COVIDVS). It has advantages in predicting `skin_sensitization`.
 ## Installation  
 - Clone repository
 ```sh
@@ -11,7 +13,7 @@ git clone https://github.com/Wenying-Yu-Lab/HOLTEP-CPU.git
 ```sh
 cd HOLTEP-CPU
 ```
-- (Optional) Add [pkuwangsw/COVIDVS]("https://github.com/pkuwangsw/COVIDVS") as a git submodule to apply the transfer learning model later
+- (Optional) Add [pkuwangsw/COVIDVS](https://github.com/pkuwangsw/COVIDVS) as a git submodule to apply the transfer learning model later
 ```sh
 git submodule add https://github.com/pkuwangsw/COVIDVS.git COVIDVS
 ```
@@ -136,4 +138,4 @@ optional arguments:
     ```
 - Notice
   - Transfer learning model can only be uesd to predict `skin_sensitization`.
-  - Refer to [pkuwangsw/COVIDVS]("https://github.com/pkuwangsw/COVIDVS#prediction") for more details.
+  - Refer to [pkuwangsw/COVIDVS](https://github.com/pkuwangsw/COVIDVS#prediction) for more details.
