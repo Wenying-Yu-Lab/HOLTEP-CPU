@@ -73,13 +73,20 @@ def parse_arguments():
     args = parser.parse_args()
     return args
 
+def arg_check(args):
+    if not args.fold_index.isdigit():
+        raise RuntimeError('Fold index must be an integer.')
+    if not (1 <= int(args.fold_index) < 11):
+        raise RuntimeError(f'Fold index out of range: {args.fold_index} (range: [1, 11)).')
+
 def predict(args):
+    arg_check(args)
     cur_model = args.model
     if cur_model == 'Chemprop':
-        from models import chemprop
-        res = chemprop.predict(args)
+        from models import chemprop as cp
+        res = cp.predict(args)
     else:
-        from models import ml
+        from models import machine_learning as ml
         res = ml.predict(args)
     return res
 
