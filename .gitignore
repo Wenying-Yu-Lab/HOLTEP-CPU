@@ -11,7 +11,7 @@
 *.log
 args.json
 hyperopt_it*.json
-*.XLECH-STATION
+events.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
