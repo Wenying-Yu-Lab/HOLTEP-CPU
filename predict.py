@@ -33,7 +33,7 @@ ARGS = [
         ['toxicity_type'],
         {
             'type': str,
-            'help': 'Specify the toxicity type for prediction from the given list.',
+            'help': 'Specify the toxicity endpoint for prediction from the given list.',
             'choices': TOXICITY_TYPES
         }
     ],
