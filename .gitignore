@@ -1,3 +1,18 @@
+# Predictions
+*-predictions.csv
+
+# Data collection
+/organize.py
+*_test.csv
+*_validate.csv
+
+# Model during training
+*.ps1
+*.log
+args.json
+hyperopt_it*.json
+events.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -56,7 +71,7 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
+# *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
