@@ -49,7 +49,7 @@ pip install chemprop
 ```
 usage: python -u predict.py [-h] [-m {Chemprop,Randomforest,SVM,XGboosting,LogisticRegression}] [-f FOLD_INDEX] [-s SAVE_DIR] {carcinogenicity,cardiotoxicity,developmental_toxicity,hepatotoxicity,nephrotoxicity,neurotoxicity,reproductive_toxicity,skin_sensitization} data_path
 
-This tool predicts the type-specific toxicity of given molecular structures at the human organ level.
+This tool predicts the specific toxicity endpoints of given molecular structures at the human organ level.
 
 positional arguments:
   {carcinogenicity,cardiotoxicity,developmental_toxicity,hepatotoxicity,nephrotoxicity,neurotoxicity,reproductive_toxicity,skin_sensitization}
@@ -110,7 +110,7 @@ optional arguments:
     ```sh
     conda activate holtep
     ```
-  - Create a dirctory to save results (skip if it exists)
+  - Create a directory to save results (skip if it exists)
     ```sh
     mkdir predictions
     ```
@@ -137,5 +137,5 @@ optional arguments:
     cd ../
     ```
 - Notice
-  - Transfer learning model can only be uesd to predict `skin_sensitization`.
+  - Transfer learning model can only be used to predict `skin_sensitization`.
   - Refer to [pkuwangsw/COVIDVS](https://github.com/pkuwangsw/COVIDVS#prediction) for more details.

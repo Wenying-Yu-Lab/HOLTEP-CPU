@@ -67,7 +67,7 @@ ARGS = [
 ]
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='This tool predicts the type-specific toxicity of given molecular structures at the human organ level.')
+    parser = argparse.ArgumentParser(description='This tool predicts the specific toxicity endpoints of given molecular structures at the human organ level.')
     for i in range(len(ARGS)):
         parser.add_argument(*ARGS[i][0], **ARGS[i][1])
     args = parser.parse_args()
