@@ -4,6 +4,11 @@ Human Organ Level Toxicity Endpoints Predictor from China Pharmaceutical Univers
 These five models are `Chemprop` (which is a deep learning model), `RandomForest`, `SVM`, `XGboosting` and `LogisticRegression` (which are machine learning models). The supported toxicity endpoints are `carcinogenicity`, `cardiotoxicity`, `developmental_toxicity`, `hepatotoxicity`, `nephrotoxicity`, `neurotoxicity`, `reproductive_toxicity` and `skin_sensitization`.  
 
 In addition, a transfer learning model based on `Chemprop` is also deployed with the help of [pkuwangsw/COVIDVS](https://github.com/pkuwangsw/COVIDVS). It has advantages in predicting `skin_sensitization`.
+
+This repository contains the results of:  
+
+Hu Y, Ren Q, Liu X, et al. In Silico Prediction of Human Organ Toxicity via Artificial Intelligence Methods[J]. Chemical Research in Toxicology, 2023. [https://doi.org/10.1021/acs.chemrestox.2c00411](https://doi.org/10.1021/acs.chemrestox.2c00411)  
+
 ## Installation  
 - Clone repository
 ```sh
